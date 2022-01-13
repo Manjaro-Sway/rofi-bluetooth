@@ -2,15 +2,16 @@
 
 _pkgname=rofi-bluetooth
 pkgname="${_pkgname}-git"
-pkgver=r18.3b85658
-pkgrel=3
+pkgver=r20.893db1f
+_commit="893db1f2b549e7bc0e9c62e7670314349a29cdf2"
+pkgrel=1
 pkgdesc='A script that generates a rofi menu that uses bluetoothctl to connect to bluetooth devices and display status info'
 arch=('any')
 url='https://github.com/ClydeDroid/rofi-bluetooth'
 license=('GPL-3.0')
 depends=('rofi' 'bluez-utils')
 makedepends=('git')
-source=("${_pkgname}::git+https://github.com/ClydeDroid/rofi-bluetooth.git")
+source=("${_pkgname}::git+https://github.com/ClydeDroid/rofi-bluetooth.git#commit=${_commit}")
 md5sums=('SKIP')
 
 prepare() {

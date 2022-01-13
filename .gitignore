@@ -1,2 +1,6 @@
-/**/
-/*.tar
+*
+!.gitignore
+!.SRCINFO
+!PKGBUILD
+!.github/
+!.github/**/*
