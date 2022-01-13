@@ -1,10 +1,10 @@
 # Maintainer: Olegs Jeremejevs <olegs@jeremejevs.com>
 
 _pkgname=rofi-bluetooth
-pkgname="${_pkgname}-git"
+pkgname="${_pkgname}"
 pkgver=r20.893db1f
 _commit="893db1f2b549e7bc0e9c62e7670314349a29cdf2"
-pkgrel=1
+pkgrel=2
 pkgdesc='A script that generates a rofi menu that uses bluetoothctl to connect to bluetooth devices and display status info'
 arch=('any')
 url='https://github.com/ClydeDroid/rofi-bluetooth'
