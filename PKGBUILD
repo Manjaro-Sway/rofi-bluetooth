@@ -16,7 +16,7 @@ md5sums=('SKIP')
 
 prepare() {
   cd "${_pkgname}"
-  sed -i 's/rofi_command=.*/rofi_command="rofi -dmenu -p"/' rofi-bluetooth
+  sed -i 's/rofi_command=.*/rofi_command=${ROFI_BLUETOOTH_COMMAND:-"rofi -dmenu -p"}/' rofi-bluetooth
 }
 
 pkgver() {
